@@ -1,9 +1,16 @@
-.container {
-    display: flex;
-    flex: 1
+* {
+    /* border: solid 1px green; */
 }
 
-div {
-    width: 16px;
-    height: 16px;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.box {
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+
 }
