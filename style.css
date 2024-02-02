@@ -1,11 +1,17 @@
+body {
+    text-align: center;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .container {
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
     flex-wrap: wrap; 
     height: 650px;
@@ -18,8 +24,9 @@
 }
 
 .box {
-    background: tomato;
+    background-color: rgb(211, 211, 211);
 }
+
 .box:before {
     content: "";
 	display: block;

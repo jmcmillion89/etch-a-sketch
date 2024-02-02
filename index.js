@@ -1,7 +1,5 @@
-const container = document.querySelector('.container')
+const color = 'black'
 const changeGridNumber = document.querySelector('#gridSize')
-const columns = document.querySelectorAll('.column')
-const color = 'green'
 
 // button function change the size of grid
 changeGridNumber.addEventListener('click', function (){
@@ -26,6 +24,7 @@ function removeGrid() {
 
 //function to create the grid
 function createGrid(number) {
+    const container = document.querySelector('.container')
     for (let i = 0; i < number; i++) {
         const div = document.createElement('div')
         div.className = 'column';
@@ -44,7 +43,6 @@ function createGrid(number) {
     }})};
 
 // change color of boxes on mouseover
-
 function changeColor() {
     const boxes = document.querySelectorAll('.box')
         boxes.forEach((box) => {
